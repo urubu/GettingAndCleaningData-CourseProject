@@ -21,30 +21,31 @@ From the raw data, the script produces a wide-form tidy intermediate and final
 dataset, tidy and wide-form being defined as per Hadley Wickham's article 
 'Tidy Data' (Journal of Statistical Software, Vol. VV, Issue II).
 
-This is done by executing the following steps:
+Deriving tidy data from the raw data is done with the following steps:
 
 -Getting variable names from the `features.txt` file.
 
 -Determining which variables are means and standard deviations using the search strings 'mean()' 
- and 'std()'. Variables with only 'mean' (without brackets) in their name are not considered to 
- be true means in the statistical sense and are therefore discarded. 
- This step produces a vector for subsetting the original dataset.
+ and 'std()' on variable names. Variables with only 'mean' (without brackets) in their name were 
+ not considered to be true means in the statistical sense and are therefore discarded. 
+ This step produces a logical vector for subsetting the original dataset.
 
- -Reading the variable data from (`test/X_test.txt`), discarding the unwanted variables by subsetting
+-Reading the variable data from (`test/X_test.txt`), discarding unwanted variables by subsetting
  and combining it with the subjet (from `test/subject_test.txt`) and activities (from 
  `test/y_test.txt`) data.  
 
--Reading the variable data (from `train/X_train.txt`), discarding the unwanted variables by subsetting
+-Reading the variable data (from `train/X_train.txt`), discarding unwanted variables by subsetting
  and combining it with the subjet (from `train/subject_train.txt`) and activities (from 
  `train/y_train.txt`) data.
 
 -Combining the train and test data.
 
--Replacing the numerical activity IDs by descriptive names. Abbreviations have been expanded ('Mag' to 
- 'Magnitude', 'Acc' to 'Accelerometer' etc.). Variables with 'BodyBody' in the original name have been
- retained.
+-Replacing the numerical activity IDs by descriptive names. 
 
- -Producing the final summary dataset containing the average of each variable for each activity and each 
+-Expanding abbreviations ('Mag' to 'Magnitude', 'Acc' to 'Accelerometer' etc.). The element 'BodyBody' in variable names has been
+ left unchanged.
+
+-Producing the final summary dataset containing the average of each variable for each activity and each 
  subject using the `aggregate` command and writing it to disk.
  
 The resulting tidy dataset can be read into R using the `read.table` command.

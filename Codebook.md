@@ -26,5 +26,26 @@ calculated means are unitless values within the range [-1,1] as well.
 For further details, refer to the full description available 
 at the site where the original data was obtained: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+## Steps taken to derive tidy data from raw data
+
+-Deriving variable names from the `features.txt` file.
+
+-Retaining only variables with 'mean()' and 'std()' in their name. 
+ Variables with only 'mean' (without brackets) in their name were not considered to 
+ be true means in the statistical sense and therefore discarded. 
+
+-Reading the test variable data from (`test/X_test.txt`) and combining it with the subjet data (from `test/subject_test.txt`) 
+ and activity data (from `test/y_test.txt`).  
+
+-Reading the train variable data (from `train/X_train.txt`) and combining it with the subjet (from `train/subject_train.txt`) and activity data (from `train/y_train.txt`) data.
+
+-Combining the train and test data.
+
+-Replacing numerical activity IDs by descriptive names. 
+
+-Expanding abbreviations in variable names ('Mag' to 'Magnitude', 'Acc' to 'Accelerometer' etc.).
+
+-Producing the final summary dataset by taking the average of each variable for each activity and each 
+ subject using the `aggregate` command.
 
  
