@@ -9,10 +9,12 @@ the activity in the respective row.
 walking, walkingupstairs, walkingdownstairs, sitting, standing, laying (sic, retained from original dataset).
 
 ##Variable 3 to 68:
-Only the elements making up the variable names are described below. 
-The variable values are means calculated from the original data.
+As the variable names have been chosen be descriptive and self-explanatory (and avoid tedious repetition), 
+only the various name elements making up the variable names are described below.
+ 
+The variable values in the tidy dataset are means calculated from the original data.
 As the original data are normalized unitless values within the range [-1,1], the 
-calculated means are unitless values within the range [-1,1] as well.
+calculated means also are unitless values within the range [-1,1].
 
 -The first name element is either 'time' or 'frequency' indicating a time-domain or frequency-domain variable, 
  respectively.
