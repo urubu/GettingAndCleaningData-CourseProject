@@ -31,11 +31,11 @@ Deriving tidy data from the raw data is done with the following steps:
  This step produces a logical vector for subsetting the original dataset.
 
 -Reading the variable data from (`test/X_test.txt`), discarding unwanted variables by subsetting
- and combining it with the subjet (from `test/subject_test.txt`) and activities (from 
+ and combining it with the subject data (from `test/subject_test.txt`) and activity data (from 
  `test/y_test.txt`) data.  
 
 -Reading the variable data (from `train/X_train.txt`), discarding unwanted variables by subsetting
- and combining it with the subjet (from `train/subject_train.txt`) and activities (from 
+ and combining it with the subject data (from `train/subject_train.txt`) and activity data (from 
  `train/y_train.txt`) data.
 
 -Combining the train and test data.

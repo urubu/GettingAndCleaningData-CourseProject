@@ -34,10 +34,10 @@ at the site where the original data was obtained: http://archive.ics.uci.edu/ml/
  Variables with only 'mean' (without brackets) in their name were not considered to 
  be true means in the statistical sense and therefore discarded. 
 
--Reading the test variable data from (`test/X_test.txt`) and combining it with the subjet data (from `test/subject_test.txt`) 
+-Reading the test variable data from (`test/X_test.txt`) and combining it with the subject data (from `test/subject_test.txt`) 
  and activity data (from `test/y_test.txt`).  
 
--Reading the train variable data (from `train/X_train.txt`) and combining it with the subjet (from `train/subject_train.txt`) and activity data (from `train/y_train.txt`) data.
+-Reading the train variable data (from `train/X_train.txt`) and combining it with the subject (from `train/subject_train.txt`) and activity data (from `train/y_train.txt`) data.
 
 -Combining the train and test data.
 
