@@ -9,12 +9,12 @@ the activity in the respective row.
 walking, walkingupstairs, walkingdownstairs, sitting, standing, laying (sic, retained from original dataset).
 
 ##Variable 3 to 68:
-As the variable names have been chosen be descriptive and self-explanatory (and to avoid tedious repetition), 
-only the various name elements making up the variable names are described below.
- 
-The variable values in the tidy dataset are means calculated from the original data.
+Numerical variables. The variable values in the tidy dataset are means calculated from the original data.
 As the original data are normalized unitless values within the range [-1,1], the 
 calculated means also are unitless values within the range [-1,1].
+
+As the variable names have been chosen be descriptive and self-explanatory (and to avoid tedious repetition), 
+only the various name elements making up the variable names are described below.
 
 -The first name element is either 'time' or 'frequency' indicating a time-domain or frequency-domain variable, 
  respectively.
@@ -22,8 +22,6 @@ calculated means also are unitless values within the range [-1,1].
 -If the last name element is X, Y or Z, the variable name refers to a measurement along the X, Y or Z axis.
 
 -The name element StdDev refers to a standard deviation measurement.
-
--All other name elements are deemed to be self-explanatory. 
 
 For further details, refer to the full description available 
 at the site where the original data was obtained: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
