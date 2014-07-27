@@ -40,7 +40,7 @@ activities <- sapply(data$activity, function(x) activityLabels[x,]$activity)
 data$activity <- as.character(data$activity)
 data$activity <- as.factor(activities)
 
-# Cleanup variable names
+# Cleanup variable names, expand abbreviations
 variableNames <- names(data)
 variableNames <- sub(".mean...|.mean..", "Mean", variableNames)
 variableNames <- sub(".std...|.std..", "StdDev", variableNames)
