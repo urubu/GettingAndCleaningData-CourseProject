@@ -9,7 +9,7 @@ the activity in the respective row.
 walking, walkingupstairs, walkingdownstairs, sitting, standing, laying (sic, retained from original dataset).
 
 ##Variable 3 to 68:
-As the variable names have been chosen be descriptive and self-explanatory (and avoid tedious repetition), 
+As the variable names have been chosen be descriptive and self-explanatory (and to avoid tedious repetition), 
 only the various name elements making up the variable names are described below.
  
 The variable values in the tidy dataset are means calculated from the original data.
