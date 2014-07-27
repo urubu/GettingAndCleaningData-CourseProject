@@ -4,7 +4,7 @@ The script has only been tested with R version 3.1.0 (64bit) on Windows 7 (64bit
 *Run at your own risk!*
 
 ## Description of raw data and its source
-The raw data are derived from accelerometer gyroscope sensor signals from a Samsung Galaxy S 
+The raw data are derived from accelerometer and gyroscope sensor signals from a Samsung Galaxy S 
 smartphone. 
 The data for this project was obtained from:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
